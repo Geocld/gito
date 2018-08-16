@@ -25,7 +25,7 @@ function add () {
                 }
                 // 1.将文件信息写入index
                 writeIndex(filesWithoutContent).then(() => {
-                    console.log('index写入成功')
+                    console.log('Index write succeeded.')
                 });
                 // 2.在object中生成相应的blob
                 let writeBlobPromises = [];
@@ -47,7 +47,7 @@ function add () {
                 }
     
                 Promise.all(writeBlobPromises).then(() => {
-                    console.log('blob写入成功');
+                    console.log('Blob write succeeded');
                     resolve();
                 });
             });

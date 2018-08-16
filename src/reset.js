@@ -42,7 +42,6 @@ function reset () {
                                     if (err) {
                                         log.err(err);
                                     }
-                                    // console.log('objects文件夹下的文件为', obfiles);
                                     // 查找commit
                                     commitSearchPath = `${workSpace()}/.gito/objects/${commitData.substring(0, 2)}/${commitData.substring(2)}`;
                                     if (!obfiles[commitSearchPath]) {
@@ -116,7 +115,7 @@ function reset () {
                                                         delete filesWithoutContent[k].metaData;
                                                     }
                                                     writeIndex(filesWithoutContent).then(() => {
-                                                        console.log('index重新写入成功')
+                                                        console.log('Index rewrite succeeded.')
                                                     });
                                                 });
                                             }, 500);
@@ -124,7 +123,7 @@ function reset () {
                                     }
                                     if (newFiles.length) {
                                         shell.rm(newFiles);
-                                        console.log('new files reset success successfully.')
+                                        console.log('New files reset succeeded.')
                                     }
             
                                 });
