@@ -1,0 +1,6 @@
+#Comment
+node_modules
+.DS_Store
+package-lock.json
+.gitoignore
+.gito
