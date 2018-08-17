@@ -1,3 +1,4 @@
 module.exports = {
-    workspace: '/Users/lijiahao/Desktop/ljh/my-git/gito/example'
+    // 这里将workspace修改为项目路径
+    workspace: '/example'
 }
