@@ -21,28 +21,28 @@ gito的操作空间和操作对象也与git一致，操作空间分为工作区�
 
 <h3>Quick start</h3>
 
-1、将项目clone至本地:
+**step-1**：将项目clone至本地:
 ```
 git clone https://github.com/Geocld/gito.git
 ```
-2、在项目根目录创建一个名为`config.js`文件，添加以下内容，workspace是项目example文件夹在你本地的具体路径:
+**step-2**：在项目根目录创建一个名为`config.js`文件，添加以下内容，workspace是项目example文件夹在你本地的具体路径:
 ```
 module.exports = {
     workspace: '<你的项目路径>/gito/example'
 }
 ```
-3、切换至example目录，开始试验gito:
+**step-3**：切换至example目录，开始试验gito:
 ```
 cd ./example && ../bin/gito.js init
 ```
 
-**注：目前只支持Linux\Unix操作系统的路径结构，Windows没做路径兼容，win下不保证能正常运行**
+>注：目前只支持Linux\Unix操作系统的路径结构，Windows没做路径兼容，win下不保证能正常运行
 
 <h3>你可以从这里获收获什么</h3>
 
 此项目是为了深入理解git的实现自己再次开发的项目，目前虽然只实现基本功能，但git常用操作的实现也能在这里找到js的实现方案，如果你对git的实现感兴趣但又因为git源码多而杂无法下手时，这个项目可以给你提供参考，如果你觉得这里的代码实现有待改善或添加新功能，欢迎fork并提交pr。
 
 <h3>TODO</h3>
-* 兼容Windows
-* 支持还原指定版本
-* 容错性修复
+- 兼容Windows
+- 支持还原指定版本
+- 容错性修复
