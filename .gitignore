@@ -16,3 +16,4 @@ package-lock.json
 *.zip
 
 .gito/
+config.js
